@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         // ایجاد مشتری
         Customer regularCustomer = new RegularCustomer("Ali");
-        Customer premiumCustomer = new PremiumCustomer("Sara");
-        Customer anotherRegularCustomer = new RegularCustomer("Reza");
+        Customer premiumCustomer = new PremiumCustomer("Tina");
+        Customer anotherRegularCustomer = new RegularCustomer("Mani");
 
         //  روش‌های پرداخت
         PaymentStrategy creditCardPayment = new CreditCardPayment("1234-5678-5432", "Ali's Card");
-        PaymentStrategy paypalPayment = new PayPalPayment("sara@gmail.com");
-        PaymentStrategy bitcoinPayment = new BitcoinPayment("1AljljG5SLmv7DivfNa");
+        PaymentStrategy paypalPayment = new PayPalPayment("Tina@gmail.com");
+        PaymentStrategy bitcoinPayment = new BitcoinPayment("1AljljG5SL7DivfNa");
 
         //اطلاعات هر مشتری
         regularCustomer.displayCustomerInfo();
@@ -31,10 +31,10 @@ public class Main {
         System.out.println("\nPayment History for Regular Customer (Ali):");
         regularCustomer.showPaymentHistory();
 
-        System.out.println("\nPayment History for Premium Customer (Sara):");
+        System.out.println("\nPayment History for Premium Customer (Tina):");
         premiumCustomer.showPaymentHistory();
 
-        System.out.println("\nPayment History for Regular Customer (Reza):");
+        System.out.println("\nPayment History for Regular Customer (Mani):");
         anotherRegularCustomer.showPaymentHistory();
     }
 }
